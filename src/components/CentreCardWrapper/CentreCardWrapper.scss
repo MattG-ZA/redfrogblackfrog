@@ -1,0 +1,16 @@
+.circle-container {
+  margin: auto;
+  width:  40em;
+  height: 40em;
+  border-radius: 50%;
+  padding: 0; 
+  list-style: none;
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  42%; 
+    left: 50%;
+    margin: -(6em / 2);
+  }
+}

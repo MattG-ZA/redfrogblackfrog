@@ -1,0 +1,72 @@
+.card {
+  position: relative;
+  margin-left: auto;
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  transition: transform .2s;
+}
+
+.card p {
+  text-align: center;
+  font: 60px/150px Georgia, Times New Roman, serif;
+  margin: 0px;
+}
+
+.suitdiamonds:before, .suitdiamonds:after {
+  content: "♦";
+  color: #ff0000;
+}
+   
+.suithearts:before, .suithearts:after {
+  content: "♥";
+  color: #ff0000;
+}
+   
+.suitclubs:before, .suitclubs:after {
+  content: "♣";
+  color: #000;
+}
+   
+.suitspades:before, .suitspades:after {
+  content: "♠";
+  color: #000;
+}
+
+span[class*='suit']:before {
+  position: absolute;
+  font-size: 35px;
+  left: 5px;
+  top: 5px;
+}
+   
+span[class*='suit']:after {
+  position: absolute;
+  font-size: 35px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.card:hover {
+  cursor: pointer;
+  zoom: 1.1;
+  z-index: 1000;
+  -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.back {
+  box-sizing: border-box;
+  border: 5px solid white;
+  background: linear-gradient(135deg, royalblue 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px), 
+              linear-gradient(225deg, royalblue 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+  background-color: royalblue;
+  background-size: 64px 128px;
+}
+
+.centre {
+  box-shadow: 9px 9px 9px rgba(0,0,0,0.3);
+}

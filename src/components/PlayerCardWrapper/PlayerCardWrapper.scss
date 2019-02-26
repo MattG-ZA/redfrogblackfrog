@@ -1,0 +1,22 @@
+.player-card-wrapper {
+    display: flex;
+    width: 500px;
+    height: 60px;
+    
+    > * {
+      display: block;
+      position: absolute;
+      margin: -(6em / 2);
+    }
+}
+
+.player-one {
+  margin-top: auto;
+  margin-bottom: 80px;
+}
+
+.player-two {
+  margin-bottom: auto;
+  margin-top: 80px;
+  transform: rotate(180deg);
+}
