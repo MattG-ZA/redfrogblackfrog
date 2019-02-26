@@ -1,13 +1,13 @@
 {
-  "main.css": "/MattG-ZA/redfrogblackfrog/static/css/main.77d6319f.chunk.css",
-  "main.js": "/MattG-ZA/redfrogblackfrog/static/js/main.89315441.chunk.js",
-  "main.js.map": "/MattG-ZA/redfrogblackfrog/static/js/main.89315441.chunk.js.map",
-  "static/js/1.77958300.chunk.js": "/MattG-ZA/redfrogblackfrog/static/js/1.77958300.chunk.js",
-  "static/js/1.77958300.chunk.js.map": "/MattG-ZA/redfrogblackfrog/static/js/1.77958300.chunk.js.map",
-  "runtime~main.js": "/MattG-ZA/redfrogblackfrog/static/js/runtime~main.a9f24509.js",
-  "runtime~main.js.map": "/MattG-ZA/redfrogblackfrog/static/js/runtime~main.a9f24509.js.map",
-  "static/css/main.77d6319f.chunk.css.map": "/MattG-ZA/redfrogblackfrog/static/css/main.77d6319f.chunk.css.map",
-  "index.html": "/MattG-ZA/redfrogblackfrog/index.html",
-  "precache-manifest.6dbce1ebba77401d7f72ee97a2f43e7c.js": "/MattG-ZA/redfrogblackfrog/precache-manifest.6dbce1ebba77401d7f72ee97a2f43e7c.js",
-  "service-worker.js": "/MattG-ZA/redfrogblackfrog/service-worker.js"
+  "main.css": "/redfrogblackfrog/static/css/main.77d6319f.chunk.css",
+  "main.js": "/redfrogblackfrog/static/js/main.89315441.chunk.js",
+  "main.js.map": "/redfrogblackfrog/static/js/main.89315441.chunk.js.map",
+  "static/js/1.77958300.chunk.js": "/redfrogblackfrog/static/js/1.77958300.chunk.js",
+  "static/js/1.77958300.chunk.js.map": "/redfrogblackfrog/static/js/1.77958300.chunk.js.map",
+  "runtime~main.js": "/redfrogblackfrog/static/js/runtime~main.98427b28.js",
+  "runtime~main.js.map": "/redfrogblackfrog/static/js/runtime~main.98427b28.js.map",
+  "static/css/main.77d6319f.chunk.css.map": "/redfrogblackfrog/static/css/main.77d6319f.chunk.css.map",
+  "index.html": "/redfrogblackfrog/index.html",
+  "precache-manifest.0a1b50d5a6174c21b2c5cf75029bdd23.js": "/redfrogblackfrog/precache-manifest.0a1b50d5a6174c21b2c5cf75029bdd23.js",
+  "service-worker.js": "/redfrogblackfrog/service-worker.js"
 }

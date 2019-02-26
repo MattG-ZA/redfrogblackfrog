@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/MattG-ZA/redfrogblackfrog/precache-manifest.6dbce1ebba77401d7f72ee97a2f43e7c.js"
+  "/redfrogblackfrog/precache-manifest.0a1b50d5a6174c21b2c5cf75029bdd23.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/MattG-ZA/redfrogblackfrog/index.html", {
+workbox.routing.registerNavigationRoute("/redfrogblackfrog/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
