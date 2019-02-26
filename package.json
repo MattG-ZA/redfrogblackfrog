@@ -1,7 +1,7 @@
 {
   "name": "redfrogblackfrog",
   "version": "0.1.0",
-  "homepage": "https://github.com/MattG-ZA/redfrogblackfrog",
+  "homepage": "https://mattg-za.github.io/redfrogblackfrog/",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
