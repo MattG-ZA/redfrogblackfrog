@@ -6,15 +6,12 @@ class CentreCardWrapper extends React.Component {
     constructor(props) {
         super(props);
         this.state = { circleCards: props.circleCards };
-
-        this.addCard = this.addCard.bind(this);
-        this.removeCard = this.removeCard.bind(this);
     }
 
     // Test only code
     addCard = () => {
         const circleCards = this.state.circleCards;
-        circleCards.push({ value: 10, suit: "hearts", display: 10, showFace: true, index: circleCards.length });
+        circleCards.push({ value: 10, suit: 'hearts', display: 10, showFace: true, index: circleCards.length });
         this.setState({ circleCards });
     }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './PlayingArea.css';
-import * as GameInit from '../../logic/GameInit';
+import { BuildCardDeck, ShuffleCardDeck, DealOpeningCircle, DealPlayerHands } from '../../logic/GameInit';
 import PlayerCardWrapper from '../PlayerCardWrapper/PlayerCardWrapper';
 import CentreCardWrapper from '../CentreCardWrapper/CentreCardWrapper';
 
@@ -11,10 +11,10 @@ class PlayingArea extends React.Component {
     }
 
     render() {
-        const deck = GameInit.buildCardDeck();
-        const shuffledDeck = GameInit.shuffleCardDeck(deck);
-        const circleCards = GameInit.dealOpeningCircle(shuffledDeck);
-        const playerHands = GameInit.dealPlayerHands(shuffledDeck);
+        const deck = BuildCardDeck();
+        const shuffledDeck = ShuffleCardDeck(deck);
+        const circleCards = DealOpeningCircle(shuffledDeck);
+        const playerHands = DealPlayerHands(shuffledDeck);
 
         console.log('deck ', shuffledDeck);
         console.log('circle ', circleCards);

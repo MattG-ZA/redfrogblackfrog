@@ -1,4 +1,4 @@
-export const buildCardDeck = () => {
+export const BuildCardDeck = () => {
     const suits = ['clubs', 'diamonds', 'hearts', 'spades'];
     const deck = [];
 
@@ -9,6 +9,7 @@ export const buildCardDeck = () => {
                 suit: suits[i],
                 display: GetCardDisplay(j),
                 showFace: true,
+                highlight: false,
             });
         }
     }
@@ -39,7 +40,7 @@ const GetCardDisplay = (value) => {
     return displayValue;
 };
 
-export const shuffleCardDeck = (deck) => {
+export const ShuffleCardDeck = (deck) => {
     const shuffledDeck = [];
 
     for (let i = 52; i > 0; i--) {
@@ -53,15 +54,15 @@ export const shuffleCardDeck = (deck) => {
     return shuffledDeck;
 };
 
-export const dealOpeningCircle = (deck) => {
+export const DealOpeningCircle = (deck) => {
     let circleCards = [];
-    circleCards.push({ value: 0, suit: "deckCard", display: 0, showFace: false, index: 0 });
+    circleCards.push({ value: 0, suit: 'deckCard', display: 0, showFace: false, index: 0 });
     circleCards = circleCards.concat(deck.splice(deck.length - 12, deck.length));
 
     return circleCards;
 }
 
-export const dealPlayerHands = (deck) => {
+export const DealPlayerHands = (deck) => {
     const playerHands = {
         first: [],
         second: [],

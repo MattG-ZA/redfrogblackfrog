@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const rotateCard = (card, totalCards) => {
+const RotateCard = (card, totalCards) => {
     let transformCard = 'none';
-    
+
     if (totalCards.type === 'centreCards') {
         const degrees = 360 / (totalCards.total - 1);
         // Ensure the deck card stays in the centre
@@ -26,15 +26,33 @@ const rotateCard = (card, totalCards) => {
     return transformCard;
 }
 
-const Card = ({ card, totalCards }) => {
+const BuildCardClass = (card) => {
     let cardClass = card.showFace ? `card suit${card.suit}` : 'card back';
 
     if (card.suit === 'deckCard') {
         cardClass += ' centre';
     }
 
+    return cardClass;
+}
+
+const BuildCardStyle = (card, totalCards) => {
+    let cardStyle = {};
+
+    cardStyle.transform = RotateCard(card, totalCards);
+
+    if (card.highlight) {
+        cardStyle.zoom = 1.1;
+        cardStyle.zIndex = 1000;
+        cardStyle.boxShadow = '4px 4px 8px rgba(0,0,0,0.3)';
+    }
+
+    return cardStyle;
+}
+
+const Card = ({ card, totalCards, selectCard }) => {
     return (
-        <span style={{ transform: rotateCard(card, totalCards) }} className={cardClass}>
+        <span onClick={() => selectCard(card)} style={BuildCardStyle(card, totalCards)} className={BuildCardClass(card)}>
             <span>
                 {card.showFace && <p>{card.display}</p>}
             </span>
