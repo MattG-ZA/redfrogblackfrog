@@ -4,7 +4,7 @@ import './Card.css';
 const RotateCard = (card, totalCards) => {
     let transformCard = 'none';
 
-    if (totalCards.type === 'centreCards') {
+    if (totalCards.type === 'circleCards') {
         const degrees = 360 / (totalCards.total - 1);
         // Ensure the deck card stays in the centre
         const translate = card.suit === 'deckCard' ? 0 : 15;

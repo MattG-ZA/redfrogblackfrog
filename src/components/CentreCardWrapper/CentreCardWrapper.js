@@ -23,7 +23,7 @@ class CentreCardWrapper extends React.Component {
     // End of test only code
 
     highlightCard = (card) => {
-        console.log('Highlight CENTRE card');
+        console.log('Highlight CIRCLE card');
     }
 
     render() {
@@ -42,7 +42,7 @@ class CentreCardWrapper extends React.Component {
                         return <Card
                             key={index}
                             card={card}
-                            totalCards={{ total: this.state.circleCards.length, type: 'centreCards' }}
+                            totalCards={{ total: this.state.circleCards.length, type: 'circleCards' }}
                             selectCard={selectCard}
                             highlightCard={this.highlightCard}
                         />
