@@ -22,16 +22,30 @@ class CentreCardWrapper extends React.Component {
     }
     // End of test only code
 
+    highlightCard = (card) => {
+        console.log('Highlight CENTRE card');
+    }
+
     render() {
+        const { selectCard } = this.props;
+
         return (
             <span>
+                {/* Test only code */}
                 <button style={{ display: 'block' }} onClick={this.addCard}>Add</button>
                 <button style={{ display: 'block' }} onClick={this.removeCard}>Remove</button >
-                
+                {/* End of test only code */}
+
                 <div className='circle-container'>
                     {this.state.circleCards.map((card, index) => {
                         card.index = index;
-                        return <Card key={index} card={card} totalCards={{total: this.state.circleCards.length, type: 'centreCards'}} />
+                        return <Card
+                            key={index}
+                            card={card}
+                            totalCards={{ total: this.state.circleCards.length, type: 'centreCards' }}
+                            selectCard={selectCard}
+                            highlightCard={this.highlightCard}
+                        />
                     })}
                 </div>
             </span>

@@ -8,11 +8,10 @@ class PlayerCardWrapper extends React.Component {
         this.state = { highlightCard: {} };
     }
 
-    selectCard = (card) => {
+    highlightCard = (card) => {
+        // Only highlight if clicking one of your own cards
         if (card.showFace) {
             const { playerHand } = this.props;
-
-            console.log('Clicked card ', card);
 
             playerHand.forEach(card => {
                 card.highlight = false;
@@ -24,7 +23,7 @@ class PlayerCardWrapper extends React.Component {
     }
 
     render() {
-        const { playerHand, player } = this.props;
+        const { playerHand, player, selectCard } = this.props;
 
         return (
             <div className={'player-card-wrapper ' + player}>
@@ -34,7 +33,8 @@ class PlayerCardWrapper extends React.Component {
                         key={index}
                         card={card}
                         totalCards={{ total: playerHand.length, type: 'playerCards' }}
-                        selectCard={this.selectCard}
+                        selectCard={selectCard}
+                        highlightCard={this.highlightCard}
                     />
                 })}
             </div>

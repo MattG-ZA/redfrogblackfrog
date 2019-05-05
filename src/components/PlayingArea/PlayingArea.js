@@ -10,6 +10,15 @@ class PlayingArea extends React.Component {
         this.state = {};
     }
 
+    selectCard = (card) => {
+        if (card.type === 'playerCards') {
+            console.log('Clicked PLAYER card ', card);
+        }
+        else if (card.type === 'centreCards') {
+            console.log('Clicked CENTRE card ', card);
+        }
+    }
+
     render() {
         const deck = BuildCardDeck();
         const shuffledDeck = ShuffleCardDeck(deck);
@@ -22,9 +31,9 @@ class PlayingArea extends React.Component {
 
         return (
             <span className="playing-area">
-                <PlayerCardWrapper playerHand={playerHands.second} player={"player-two"} />
-                <CentreCardWrapper circleCards={circleCards} />
-                <PlayerCardWrapper playerHand={playerHands.first} player={"player-one"} />
+                <PlayerCardWrapper playerHand={playerHands.second} player={"player-two"} selectCard={this.selectCard} />
+                <CentreCardWrapper circleCards={circleCards} selectCard={this.selectCard} />
+                <PlayerCardWrapper playerHand={playerHands.first} player={"player-one"} selectCard={this.selectCard} />
             </span>
         );
     }

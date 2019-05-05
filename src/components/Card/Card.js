@@ -50,9 +50,11 @@ const BuildCardStyle = (card, totalCards) => {
     return cardStyle;
 }
 
-const Card = ({ card, totalCards, selectCard }) => {
+const Card = ({ card, totalCards, selectCard, highlightCard }) => {
+    card.type = totalCards.type;
+
     return (
-        <span onClick={() => selectCard(card)} style={BuildCardStyle(card, totalCards)} className={BuildCardClass(card)}>
+        <span onClick={() => {selectCard(card); highlightCard(card)}} style={BuildCardStyle(card, totalCards)} className={BuildCardClass(card)}>
             <span>
                 {card.showFace && <p>{card.display}</p>}
             </span>
