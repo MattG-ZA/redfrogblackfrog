@@ -30,7 +30,7 @@ class CentreCardWrapper extends React.Component {
         const { selectCard } = this.props;
 
         return (
-            <span>
+            <div className='centre-container'>
                 {/* Test only code */}
                 <button style={{ display: 'block' }} onClick={this.addCard}>Add</button>
                 <button style={{ display: 'block' }} onClick={this.removeCard}>Remove</button >
@@ -48,7 +48,7 @@ class CentreCardWrapper extends React.Component {
                         />
                     })}
                 </div>
-            </span>
+            </div>
         );
     }
 }

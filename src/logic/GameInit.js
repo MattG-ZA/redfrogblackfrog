@@ -70,7 +70,7 @@ export const DealPlayerHands = (deck) => {
 
     const deckSize = deck.length;
 
-    for (let i = deckSize - 1; i > deckSize - 15; i--) {
+    for (let i = deckSize - 1; i > deckSize - 21; i--) {
         if (i % 2 === 0) {
             deck[i].showFace = false;
             playerHands.second.push(deck[i]);
